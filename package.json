@@ -9,8 +9,12 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "autoprefixer": "^9.5.1",
     "browser-sync": "^2.26.5",
+    "del": "^4.1.0",
     "gulp": "^4.0.1",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-image-resize": "^0.13.0",
     "gulp-sass": "^4.0.2"
   }
 }
