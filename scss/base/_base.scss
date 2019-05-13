@@ -14,18 +14,18 @@ $typo: arial;
 
 
 body{
-    background: $color-1;
+    background: $color-light;
     height: 400vh;
 }
 
 h1 {
-    color: $color-2;
+    color: $color-secondary;
     font-size: $font-big;
     font-family: $typo;
     text-align: center;
 }
 p {
-    color: $color-2;
+    color: $color-primary;
     font-size: $font-small;
     font-family: $typo;
 }

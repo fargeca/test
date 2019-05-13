@@ -7,7 +7,13 @@
 
   $theme-colors: (
   "primary": $color-primary,
-  "danger": #ff36e4
+  "secondary":  $color-secondary,
+    "success":    $color-success,
+    // "info":       $info,
+    // "warning":    $warning,
+    // "danger":     $danger,
+    "light":      $color-light,
+    // "dark":       $dark
 );
 
 
