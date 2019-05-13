@@ -1,0 +1,24 @@
+$color-1:rgb(17, 17, 17);
+$color-2:white;
+$font-small:18px;
+$font-big:30px;
+$typo: arial;
+
+
+
+body{
+    background: $color-1;
+    height: 400vh;
+}
+
+h1 {
+    color: $color-2;
+    font-size: $font-big;
+    font-family: $typo;
+    text-align: center;
+}
+p {
+    color: $color-2;
+    font-size: $font-small;
+    font-family: $typo;
+}
