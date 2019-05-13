@@ -1,4 +1,14 @@
+@import 'base/custom.scss';
 @import 'base/_base.scss';
+
+
+@import 'layout/_header.scss';
+@import 'layout/_main.scss';
+@import 'layout/_footer.scss';
+@import 'layout/_sidebar.scss';
+
+
+@import 'modules/_buttons.scss';
 @import 'modules/sprite.scss';
 
 .hhhh{
