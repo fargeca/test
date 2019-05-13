@@ -5,8 +5,10 @@
       color:red !important;
   }
 
-  $primary: purple;
-  $danger: red;
+  $theme-colors: (
+  "primary": $color-primary,
+  "danger": #ff36e4
+);
 
 
 // $primary:       red !default;
