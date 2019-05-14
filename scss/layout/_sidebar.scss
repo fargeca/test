@@ -1,19 +1,82 @@
-.sidebar .navbar-nav {
+.sidebar {
     position: fixed ;
     top:0;
     left:0;
     height: 100vh;
     background-color: $color-primary;
+    padding: 0;
+    @extend .navbar-nav;
+
+    overflow-y: scroll;
+
+        ul {
+            list-style: none;
+        }
+
+
+        .sidebar__img {
+            text-align: center;
+            height: $header-height;
+            margin-bottom: 1rem;
+            
+                img {
+                    height: $header-height - ($header-height / 4) ;
+                }
+        }
+
+        .sidebar__item {
+            @extend .nav-item;
+            padding:0;
+            margin-bottom: 3rem;
+        }
+
+        .sidebar__nav-item {
+            padding-left: 3rem;
+            font-family: $typo;
+            font-size: 1.3rem;
+            font-weight: 700;
+            @extend .text-white;
+            @extend .nav-link;
+
+            &:hover {
+                @extend .text-secondary ;
+                border-left: 6px solid $color-secondary; 
+            }
+        }
+        
+        .sidebar__nav-sub-item {
+            padding-left: 5rem;
+            font-family: $typo;
+            font-size: 1rem;
+            font-weight: 300;
+            @extend .text-white;
+            @extend .nav-link;
+
+            &:hover {
+                font-weight: 700;
+                //background-color: rgb(146, 138, 214);
+            }
+        }
+
+
+
+
+        .sidebar__nav-item--selected {
+                @extend .text-secondary ;
+                //background-color: rgb(146, 138, 214);
+                border-left: 6px solid $color-secondary;
+            
+        }
 }
 
-.sidebar-wrapper {
-    background-color: $color-primary;
-}
 
-h3 {
-    color: red;
-}
 
-.header .form-control {
-    height: 97px;
+
+
+
+
+.kapt-white {
+    text-align: center;
+    zoom: 0.5;
+    
 }

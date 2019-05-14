@@ -5,6 +5,7 @@
 
 @import 'base/custom.scss';
 @import 'base/_base.scss';
+@import 'base/_typos.scss';
 
 
 @import 'layout/_header.scss';
@@ -16,12 +17,14 @@
 @import 'modules/_buttons.scss';
 @import 'modules/sprite.scss';
 
-.hhhh{
-    @include sprite($img-1);
-    margin-bottom: 30px;
-}
-@include sprites($spritesheet-sprites);
 
-.icon{
-    display: block;
-}
+//HOW TO USE SPRITES
+// .hhhh{
+//     @include sprite($img-1);
+//     margin-bottom: 30px;
+// }
+// @include sprites($spritesheet-sprites);
+
+// .icon{
+//     display: block;
+// }
