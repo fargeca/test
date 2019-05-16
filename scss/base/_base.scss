@@ -3,4 +3,12 @@ body{
     //background-color: white;
     height: 400vh;
 }
+a {
+    color: $color-secondary !important;
 
+    &:hover {
+        color: $color-success !important;
+        transition: all 0.3s linear;
+    }
+  }
+  

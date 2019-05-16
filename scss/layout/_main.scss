@@ -33,25 +33,50 @@
 
 
 
-//articls pouplaires
-.popular-articles__cards {
-    margin: 3rem 0rem $row-spacing $margin-left-content;
+//articls populaires
+
+
+
+//popular-articles
+.popular-articles {
+    margin: 3rem 0rem 0rem 0rem;
+    
+    
 }
 
+.popular-articles--center{
+    display: flex;
+    justify-content: space-around    ;
+}
+
+.popular-articles__card {
+    
+}
 
 .popular-articles__title {
     @extend .article-preview__title ;
+}
+
+.popular-articles__link {
+    font-family: $font-primary;
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0rem $row-spacing 0;
 }
 
 //contact
 .contact {
     display: flex;
     justify-content: center;
-    padding:  8rem 0 $row-spacing 0;
+    padding:  8rem 0 0 0;
 }
+
+
+
 
 .contact__title {
     display: flex;
     justify-content: center;
     margin-bottom:2rem;
 }
+

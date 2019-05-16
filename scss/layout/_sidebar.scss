@@ -45,8 +45,7 @@
 
         .sidebar__nav-item {
             padding-left: 3rem;
-            //font-family: $typo;
-            font-family: 'Futura-medium';
+            font-family: $font-primary;
             font-size: 1.3rem;
             //font-weight: 700;
             text-decoration: none;
@@ -61,7 +60,7 @@
         
         .sidebar__nav-sub-item {
             padding-left: 5rem;
-            font-family: $typo;
+            font-family: $font-secondary;
             font-size: 1rem;
             font-weight: 300;
             text-decoration: none;

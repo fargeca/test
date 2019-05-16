@@ -1,7 +1,7 @@
 p {
     color: rgb(95, 95, 95);
     font-size: $font-small;
-    font-family: $typo;
+    font-family: $font-secondary;
 }
 
 h1 {
@@ -15,6 +15,7 @@ h1 {
 
 h3 {
     //font-family: 'Nunito Sans';
-    font-family: 'Futura-medium';
-    //font-weight: 700 !important;
+    font-family: $font-primary;
+    color: rgb(53, 53, 53) ;
+    //font-weight: 500 !important;
 }
