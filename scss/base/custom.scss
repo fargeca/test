@@ -1,9 +1,11 @@
+
+
+
+
 //pour personnaliser bootstrap
 
 
-  h2 {
-      color:red !important;
-  }
+
 
   $theme-colors: (
   "primary": $color-primary,
@@ -16,7 +18,51 @@
     // "dark":       $dark
 );
 
+// Navbar nav
+//
+// Custom navbar navigation (doesn't require `.nav`, but does make use of `.nav-link`).
 
+.navbar-nav {
+  display: flex;
+  flex-direction: column; // cannot use `inherit` to get the `.navbar`s value
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+
+  .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .dropdown-menu {
+    position: static;
+  }
+}
+
+
+.dropdown-toggle::after{
+  position: absolute;
+  top: 1.4rem;
+  right: 1.5rem;
+  //transform: rotate(-90deg);
+  //transition-duration: 0.5s;
+}
+
+a {
+  color: $color-secondary !important;
+}
+
+//dans grid-framework : plus de relative
+// @mixin make-grid-columns($columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
+//   // Common properties for all breakpoints
+//   %grid-column {
+//     position: relative;
+//     width: 100%;
+//     padding-right: $gutter / 2;
+//     padding-left: $gutter / 2;
+//   }
+
+  
 // $primary:       red !default;
 // $secondary:     $gray-600 !default;
 // $success:       $green !default;

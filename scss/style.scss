@@ -1,11 +1,16 @@
+
+
 @import 'tools/_var.scss';
 @import 'tools/_functions.scss';
 @import 'tools/_mixins.scss';
 
 
 @import 'base/custom.scss';
+
 @import 'base/_base.scss';
 @import 'base/_typos.scss';
+
+@import "node_modules/bootstrap/scss/bootstrap";
 
 
 @import 'layout/_header.scss';
@@ -16,6 +21,7 @@
 
 @import 'modules/_buttons.scss';
 @import 'modules/sprite.scss';
+@import 'modules/_cards.scss';
 
 
 //HOW TO USE SPRITES

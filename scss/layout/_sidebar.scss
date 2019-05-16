@@ -1,18 +1,24 @@
-.sidebar {
+.clicked {
+    //background-color: red;
+    transform: rotate(90deg);
+    transition-duration: 0.5s;
+}
+
+.sidebar { 
     position: fixed ;
     top:0;
     left:0;
     height: 100vh;
-    background-color: $color-primary;
     padding: 0;
+    //min-width: 200px;
+    background-color: $color-primary;
     @extend .navbar-nav;
-
-    overflow-y: scroll;
-
+    //overflow-y: scroll;
+        
         ul {
             list-style: none;
+            padding: 0;
         }
-
 
         .sidebar__img {
             text-align: center;
@@ -23,24 +29,34 @@
                     height: $header-height - ($header-height / 4) ;
                 }
         }
-
+        
         .sidebar__item {
-            @extend .nav-item;
+            
             padding:0;
             margin-bottom: 3rem;
+            @extend .nav-item;
+            @extend .dropdown;
+            transition: all 0.3s linear  ;
+
+            &:hover {
+                border-left: 6px solid $color-secondary;
+                transition: border-width 0.3s linear  ;
+            }
         }
 
         .sidebar__nav-item {
             padding-left: 3rem;
-            font-family: $typo;
+            //font-family: $typo;
+            font-family: 'Futura-medium';
             font-size: 1.3rem;
-            font-weight: 700;
+            //font-weight: 700;
+            text-decoration: none;
             @extend .text-white;
             @extend .nav-link;
+            @extend .dropdown-toggle;
 
             &:hover {
-                @extend .text-secondary ;
-                border-left: 6px solid $color-secondary; 
+                @extend .sidebar__nav-item--selected;
             }
         }
         
@@ -49,34 +65,29 @@
             font-family: $typo;
             font-size: 1rem;
             font-weight: 300;
+            text-decoration: none;
             @extend .text-white;
             @extend .nav-link;
 
             &:hover {
-                font-weight: 700;
-                //background-color: rgb(146, 138, 214);
+                @extend .sidebar__nav-sub-item--selected
             }
         }
 
 
-
+        .sidebar__item--selected {
+            border-left: 6px solid $color-secondary;   
+        }
+        
 
         .sidebar__nav-item--selected {
                 @extend .text-secondary ;
-                //background-color: rgb(146, 138, 214);
-                border-left: 6px solid $color-secondary;
-            
         }
-}
 
-
-
-
-
-
-
-.kapt-white {
-    text-align: center;
-    zoom: 0.5;
-    
+        .sidebar__nav-sub-item--selected {
+            font-weight: 700;
+            @extend .text-secondary ;
+            //border-left: 6px solid $color-secondary;
+            //padding-left: 4.5rem;
+    }
 }

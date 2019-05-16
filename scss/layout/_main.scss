@@ -1,4 +1,40 @@
 .content {
     //padding-top : header size (to show content)
-    padding: $header-height+2rem 8rem 0rem 8rem;
+    //padding: $header-height+5rem 250px 0rem 250px;
+    padding: $header-height+2rem 15rem 0rem 15rem;
+    //padding-top: $header-height+5rem ;
+}
+
+.article-preview {
+    padding:  8rem 0 8rem 0;
+
+}
+
+.article-preview__title {
+    margin-bottom: 3rem;
+    transition-duration: 2s;
+
+    &:hover {
+        color: $color-secondary;
+        transition-duration: 1s;
+    }
+}
+
+.article-preview__text {
+    //margin: 0px 40px 0px 30px;
+    margin: 0rem 2rem 0rem 1rem;
+}
+
+.article-preview__img {
+    width: 400px;
+}
+
+.article-preview__img-wrapper {
+    text-align: center;
+}
+
+
+.cards {
+    margin-left: $margin-left-content;
+    margin-bottom: 8rem;
 }
