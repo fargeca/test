@@ -1,8 +1,7 @@
-.clicked {
-    //background-color: red;
-    transform: rotate(90deg);
-    transition-duration: 0.5s;
-}
+// .clicked {
+//     transform: rotate(90deg);
+//     transition-duration: 0.5s;
+// }
 
 .sidebar { 
     position: fixed ;
@@ -40,7 +39,7 @@
 
             &:hover {
                 border-left: 6px solid $color-secondary;
-                transition: border-width 0.3s linear  ;
+                transition: all 0.3s linear  ;
             }
         }
 
