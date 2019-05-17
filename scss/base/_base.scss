@@ -1,14 +1,31 @@
 body{
-     background: $color-light;
-    //background-color: white;
-    height: 400vh;
+    //background: $color-light !important;
+    background-color: white;
+    height: 220vh;
+} 
+// a {
+//     color: $color-secondary !important;
+
+//     &:hover {
+//         color: $color-success !important;
+//         transition: all 0.3s linear;
+//     }
+//   }
+  
+.link-primary {
+    color: $color-success !important;
+
+    &:hover {
+        color: $color-secondary !important;
+        transition: all 0.3s linear;
+    }
 }
-a {
+
+.link-secondary {
     color: $color-secondary !important;
 
     &:hover {
         color: $color-success !important;
         transition: all 0.3s linear;
     }
-  }
-  
+}

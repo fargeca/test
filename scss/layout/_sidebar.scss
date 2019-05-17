@@ -1,7 +1,6 @@
-// .clicked {
-//     transform: rotate(90deg);
-//     transition-duration: 0.5s;
-// }
+.clicked {
+    
+}
 
 .sidebar { 
     position: fixed ;
@@ -22,7 +21,15 @@
         .sidebar__img {
             text-align: center;
             height: $header-height;
-            margin-bottom: 1rem;
+            margin-bottom: 3rem;
+            @extend .nav-item;
+            @extend .dropdown;
+            transition: all 0.2s linear  ;
+
+                &:hover {
+                    background-color: rgb(27, 27, 70);
+                    transition: all 0.2s linear  ;
+                }
             
                 img {
                     height: $header-height - ($header-height / 4) ;
@@ -35,6 +42,7 @@
             margin-bottom: 3rem;
             @extend .nav-item;
             @extend .dropdown;
+            border-left: 0px solid $color-secondary;
             transition: all 0.3s linear  ;
 
             &:hover {
@@ -52,6 +60,16 @@
             @extend .text-white;
             @extend .nav-link;
             @extend .dropdown-toggle;
+            
+            &::after {
+                transform: rotate(-90deg);
+            }
+            &.clicked{
+                &::after{
+                    transform: rotate(0deg);
+                    transition-duration: 0.5s;
+                }
+            }
 
             &:hover {
                 @extend .sidebar__nav-item--selected;

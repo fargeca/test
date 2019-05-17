@@ -1,5 +1,5 @@
 .card {
-    
+    min-width: 14rem;
     max-width: 17rem;
     padding: 2rem 3rem 2rem 3rem;
     position: static;
@@ -26,8 +26,79 @@
 
     .card-text {
         font-size: 0.9rem;
-        margin: 2rem 0.5rem 2rem 0.5rem;
+        margin: 2rem 0rem 2rem 0rem;
 
+        //font-family: Helvetica;
+        color: #838383;
+    }
+
+    hr {
+        border-top: 1px solid rgb(163, 163, 163);
+    }
+
+    .card-link {
+        margin: 2rem 0.5rem 1rem 0.5rem;
+    }
+}
+
+
+
+.card--horizontal {
+    //@extend .card ;
+    padding: 2rem 3rem 2rem 3rem;
+    //max-width: 40rem;
+    //max-height: 10rem;
+    text-align: center;
+    box-shadow: 0 2px 20px 2px rgba(163,163,163,0.30);
+
+
+    &:hover{
+        box-shadow: 0 2px 20px 2px rgba(58, 58, 58, 0.3);
+    }
+
+    .card-body {
+        font-family: $font-primary;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    
+
+    .part-1 {
+        //display: inline;
+        //@extend .col-2;
+        //float: left;
+        //position: relative;
+        //left:0;
+        margin: 0rem 2rem 0rem 0.5rem;
+        padding: 0;
+        
+    }
+
+    .part-2 {
+       // @extend .col-2;
+        //display: inline;
+        //float: right;
+        margin: 2rem 1rem 0rem 2rem;
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+    .card-image {
+        margin: 1rem 0rem 0.5rem 0rem;
+
+    }
+
+    .card-body {
+    }
+    .card-title {
+        margin: 2rem 0.3rem 1rem 0.3rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
         //font-family: Helvetica;
         color: #838383;
     }
