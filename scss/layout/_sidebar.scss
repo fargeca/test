@@ -61,13 +61,16 @@
             @extend .nav-link;
             @extend .dropdown-toggle;
             
+            
             &::after {
                 transform: rotate(-90deg);
+                transition: all 0.4s linear;
             }
             &.clicked{
                 &::after{
                     transform: rotate(0deg);
-                    transition-duration: 0.5s;
+                    //transition-duration: 0.5s;
+                    transition: all 0.4s linear;
                 }
             }
 
@@ -93,11 +96,15 @@
 
         .sidebar__item--selected {
             border-left: 6px solid $color-secondary;   
+            
         }
         
 
         .sidebar__nav-item--selected {
                 @extend .text-secondary ;
+                &::after{
+                    transform: rotate(0deg) !important;
+                }
         }
 
         .sidebar__nav-sub-item--selected {
