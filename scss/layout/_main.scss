@@ -37,7 +37,7 @@
 
 //popular-articles
 .popular-articles {
-    margin: 3rem 0rem 0rem 0rem;
+    margin: 3rem 0rem $row-spacing 0rem;
     
     
 }
@@ -59,7 +59,7 @@
     font-family: $font-primary;
     display: flex;
     justify-content: center;
-    margin: 5rem 0rem $row-spacing 0;
+    margin: 5rem 0rem 0 0;
 }
 
 
