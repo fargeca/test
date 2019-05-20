@@ -1,5 +1,6 @@
 .header .form-control {
     height: $header-height;
+    
     background-color: rgb(240, 240, 240);
     //background-color: $color-light;
     //background-color: white;
@@ -9,6 +10,7 @@
     position: fixed;
     top:0;
     width:100%;
+    margin-left: 285px;
 }
 
 

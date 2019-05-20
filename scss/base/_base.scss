@@ -14,18 +14,19 @@ body{
   
 .link-primary {
     color: $color-success !important;
-
+    transition: all 0.2s linear;
     &:hover {
         color: $color-secondary !important;
-        transition: all 0.3s linear;
+        transition: all 0.2s linear;
     }
 }
 
 .link-secondary {
     color: $color-secondary !important;
-
+    transition: all 0.2s linear;
     &:hover {
         color: $color-success !important;
-        transition: all 0.3s linear;
+        transition: all 0.2s linear;
     }
 }
+

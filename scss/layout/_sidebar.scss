@@ -2,13 +2,17 @@
     
 }
 
+.sidebar-wrapper {
+    //min-width: 180px;;
+}
+
 .sidebar { 
     position: fixed ;
     top:0;
     left:0;
     height: 100vh;
     padding: 0;
-    //min-width: 200px;
+    min-width: 285px;
     background-color: $color-primary;
     @extend .navbar-nav;
     //overflow-y: scroll;
@@ -37,7 +41,7 @@
         }
         
         .sidebar__item {
-            
+            //margin-right: 2rem;
             padding:0;
             margin-bottom: 3rem;
             @extend .nav-item;
@@ -75,7 +79,8 @@
             }
 
             &:hover {
-                @extend .sidebar__nav-item--selected;
+                @extend .text-secondary ;
+                //@extend .sidebar__nav-item--selected;
             }
         }
         
@@ -85,6 +90,7 @@
             font-size: 1rem;
             font-weight: 300;
             text-decoration: none;
+            
             @extend .text-white;
             @extend .nav-link;
 
@@ -114,3 +120,4 @@
             //padding-left: 4.5rem;
     }
 }
+

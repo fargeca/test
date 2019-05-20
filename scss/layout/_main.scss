@@ -3,8 +3,13 @@
     //padding: $header-height+5rem 250px 0rem 250px;
     //padding: $header-height+2rem 15rem 0rem 15rem;
     // padding: $header-height+2rem 15% 0rem 15%
-    padding: $header-height+2rem 0rem 0rem 0rem
+    padding-top: $header-height;
     //padding-top: $header-height+5rem ;
+    padding-left: 285px;
+}
+
+.main{
+    // margin-left: 285px;
 }
 
 
@@ -17,6 +22,7 @@
 
 .article-preview__title {
     margin-bottom: 3rem;
+    margin-left: 1rem;
 }
 
 .article-preview__text {
@@ -78,5 +84,48 @@
     display: flex;
     justify-content: center;
     margin-bottom:2rem;
+}
+
+
+
+
+
+
+//Article
+.article {
+
+    .article__title {
+        margin-bottom: 3rem ;
+    }
+    
+    .article__header {
+        margin-bottom: 6rem ;
+    }
+    
+    .article__subtitle {
+        margin-bottom: 4rem;
+        margin-top: 8rem;
+    }
+    
+    .article__text {
+        //margin-left: $margin-left-content;
+    }
+
+    .article__img {
+        text-align:center;
+        margin-bottom: 2rem;
+    }
+
+
+}
+
+.article-footer {
+    margin-top: 15rem;
+    margin-bottom: 5rem;
+
+    .article-footer__title {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
 }
 
