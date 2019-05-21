@@ -5,11 +5,11 @@
     // padding: $header-height+2rem 15% 0rem 15%
     padding-top: $header-height;
     //padding-top: $header-height+5rem ;
-    margin-left: $sidebar-width;
+    //margin-left: $sidebar-width;
 }
 
 .main{
-     //margin-left: $sidebar-width;
+     margin-left: $sidebar-width;
 }
 
 
@@ -20,7 +20,7 @@
 
     .article-preview__title {
         margin-bottom: 3rem;
-        margin-left: 1rem;
+        //margin-left: 1rem;
     }
     
     .article-preview__text-wrapper {
