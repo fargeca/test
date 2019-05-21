@@ -59,7 +59,15 @@
   padding: 0 !important;
 }
 
-.c
+$grid-breakpoints: (
+  xs: 0,
+  sm: 480px,
+  md: 1200px,
+  lg:1400px
+  // md: 768px,
+  // lg: 1024px
+);
+
 
 // .col-4 {
 //   margin: 0px !important;

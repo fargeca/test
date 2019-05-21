@@ -24,11 +24,8 @@
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700" rel="stylesheet">
 </head>
 
+
 <body>
-
-
-
-
   <div class="sidebar-wrapper">
     <nav>
       <ul class="sidebar">
@@ -123,6 +120,9 @@
     </nav>
   </div>
 
+
+
+
   <div class="main ">
     <div class="container">
       <div class="row">
@@ -137,7 +137,7 @@
               <h3 class="article-preview__title">Accéder à django CMS</h3>
             </div>
             <div class="row  d-flex align-items-center ">
-              <div class="col-xl-6 col-lg-12">
+              <div class="col-lg-6 col-md-12 article-preview__text-wrapper">
                 <div class="article-preview__text">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi impedit consequuntur modi eius
                     deserunt commodi et vitae
@@ -149,7 +149,7 @@
                   <a class="link-secondary" href="#">Lire la suite</a>
                 </div>
               </div>
-              <div class="col-xl-6 col-lg-12 article-preview__img-wrapper">
+              <div class="col-lg-6 col-md-12 article-preview__img-wrapper block-big-screen">
                 <img class="article-preview__img" src="img/django-connexion.png" alt="">
               </div>
             </div>
@@ -163,43 +163,56 @@
 
 
             <!-- CARD BIG SCREEN -->
-            <div class="row popular-articles card-big-screen">
-              <div class="col-4   popular-articles--center">
+            <div class="popular-articles flex-big-screen">
+              <div class=" popular-articles--center">
                 <div class="card popular-articles__card">
                   <div class="card-body">
-                    <img class="card-image" src="img/icon-grid.png" alt="">
-                    <h5 class="card-title">Structurer vos pages</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                    <hr>
-                    <div class="card-link">
-                      <a class="link-secondary" href="#">Voir l'article</a>
+                    <div class="img__wrapper">
+                      <img class="card-image" src="img/icon-grid.png" alt="">
+                      <h5 class="card-title">Structurer vos pages</h5>
+                    </div>
+                    <div class="text__wrapper">
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                      <hr>
+                      <div class="card-link">
+                        <a class="link-secondary" href="#">Voir l'article</a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class=" popular-articles--center">
+                <div class="card popular-articles__card">
+                  <div class="card-body">
+                    <div class="img__wrapper">
+                      <img class="card-image" src="img/icon-pen.png" alt="">
+                      <h5 class="card-title">Structurer vos pages</h5>
+                    </div>
+                    <div class="text__wrapper">
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                      <hr>
+                      <div class="card-link">
+                        <a class="link-secondary" href="#">Voir l'article</a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-4 popular-articles--center">
+              <div class="popular-articles--center">
                 <div class="card popular-articles__card">
                   <div class="card-body">
-                    <img class="card-image" src="img/icon-pen.png" alt="">
-                    <h5 class="card-title">Structurer vos pages</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                    <hr>
-                    <div class="card-link">
-                      <a class="link-secondary" href="#">Voir l'article</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-4  popular-articles--center">
-                <div class="card popular-articles__card">
-                  <div class="card-body">
+                      <div class="img__wrapper">
                     <img class="card-image" src="img/icon-paint.png" alt="">
                     <h5 class="card-title">Modifier une page</h5>
+                      </div>
+                      <div class="text__wrapper">
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                     <hr>
                     <div class="card-link">
                       <a class="link-secondary" href="#">Voir l'article</a>
                     </div>
+                  </div>
                   </div>
                 </div>
               </div>
@@ -210,7 +223,7 @@
 
             <!-- CARD MEDIUM SCREEN -->
 
-            <div class="row popular-articles card-medium-screen">
+            <!-- <div class="row popular-articles flex-medium-screen">
               <div class="col-12  popular-articles--center">
                 <div class="card--horizontal ">
                   <div class="card-body ">
@@ -288,28 +301,28 @@
             <div class="col-12 popular-articles__link">
               <h4 class=""> <a class="link-primary" href="articles.html">Voir plus d'articles</a> </h4>
             </div>
-          </div>
+          </div> -->
 
-          <!-- CARD END MEDIUM SCREEN -->
+            <!-- CARD END MEDIUM SCREEN -->
 
 
-          <div class="row contact">
-            <div class="col-12 ">
-              <h3 class="contact__title">Vous ne trouvez pas de réponse à votre question ?</h3>
+            <div class="row contact">
+              <div class="col-12 ">
+                <h3 class="contact__title">Vous ne trouvez pas de réponse à votre question ?</h3>
+              </div>
+              <button type="button" class="button">Contactez-nous !</button>
             </div>
-            <button type="button" class="button">Contactez-nous !</button>
           </div>
+
+
+
+
+
         </div>
-
-
-
-
-
       </div>
+
+
     </div>
-
-
-  </div>
 
   </div>
   </div>
