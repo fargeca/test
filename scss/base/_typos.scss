@@ -9,7 +9,7 @@ h1 {
     padding: 2rem;
     color: rgb(46, 46, 46);
     font-size: 3rem !important;
-    // font-weight: 500 !important;
+    //font-weight: 600 !important;
     // font-weight: 400 !important;
     font-family: $font-primary;
     text-align: center;
@@ -20,3 +20,6 @@ h3 {
     color: rgb(53, 53, 53) ;
 }
 
+.section__title {
+    margin-bottom: 2rem;
+}

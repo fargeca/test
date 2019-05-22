@@ -13,6 +13,13 @@
 }
 
 
+@include media-breakpoint-only(xs) {
+    .section__title-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+}
 
 //article preview
 .article-preview {
@@ -42,9 +49,11 @@
     }
     
         @include make-col-ready();
-    
+        
         @include media-breakpoint-down(md) {
             @include make-col(12);
+            
+            
             .article-preview__text-wrapper {
                 order: 2;
                 
@@ -70,12 +79,6 @@
                 @include make-col(6);
             }
         }
-        
-    
-
-    
-    
-        
 
     // .article-preview__text-wrapper {
     //     @include make-col-ready();
@@ -120,10 +123,6 @@
     justify-content: space-around;
 }
 
-.popular-articles__card {
-    
-}
-
 .popular-articles__title {
     @extend .article-preview__title ;
 }
@@ -138,10 +137,34 @@
 .popular-articles--center{
     @include make-col-ready();
 
+    @include media-breakpoint-only(xs) {
+        @include make-col(12);
+        //vertical
+        .card {
+            min-width: 15rem !important;
+            max-width: 17rem !important;
+            padding: 2rem 3rem 2rem 3rem !important;
+
+            &-body{
+                display: block !important;
+
+                .img__wrapper{
+                    margin: 0 !important;
+                }
+
+                .text__wrapper {
+                    margin: 0 !important;
+                }
+                
+            }
+        
+        }
+    } 
+
     @include media-breakpoint-down(md) {
         @include make-col(12);
 
-        
+        //horizontal
         .card{
             // min-width: 100%;
              margin-bottom: 2rem;
@@ -211,7 +234,7 @@
     text-align: center;
     font-size: 2rem;
     //justify-content: center;
-    margin-bottom:2rem;
+    margin: 2rem;
 }
 
 
@@ -258,6 +281,7 @@
 .article-footer {
     margin-top: 15rem;
     margin-bottom: 5rem;
+    justify-content: center;
 
     .article-footer__title {
         text-align: center;
