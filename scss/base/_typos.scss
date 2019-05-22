@@ -1,5 +1,6 @@
 p {
-    color: rgb(95, 95, 95);
+    //color: rgb(95, 95, 95);
+    color: $color-text;
     font-size: $font-small;
     font-family: $font-secondary;
 }
@@ -8,15 +9,14 @@ h1 {
     padding: 2rem;
     color: rgb(46, 46, 46);
     font-size: 3rem !important;
-    font-weight: 700;
+    // font-weight: 500 !important;
+    // font-weight: 400 !important;
     font-family: $font-primary;
     text-align: center;
 }
 
 h3 {
-    //font-family: 'Nunito Sans';
     font-family: $font-primary;
     color: rgb(53, 53, 53) ;
-    //font-weight: 500 !important;
 }
 

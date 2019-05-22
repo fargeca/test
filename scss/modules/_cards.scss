@@ -17,7 +17,7 @@
     }
     
     .card-image {
-        margin: 1rem 0rem 0.5rem 0rem;;
+        margin: 1rem 0rem 0.5rem 0rem;
     }
 
     .card-title {
@@ -46,8 +46,12 @@
 .card--horizontal {
     @extend .card ;
     // padding: 2rem 3rem 2rem 3rem;
+    position: static !important;
+    margin-bottom: 2rem;
     padding: 1.3rem 1.5rem 1.3rem 1.5rem;
     max-width: 30rem;
+    // max-width: 100%;
+    // min-width: 100%;
     min-width: 23rem;
     text-align: center;
     background-color: white;
@@ -61,7 +65,7 @@
     
     
 
-    .part-1 {
+    .img__wrapper {
         //display: inline;
         //@extend .col-2;
         //float: left;
@@ -72,11 +76,11 @@
         
     }
 
-    .part-2 {
+    .text__wrapper {
        // @extend .col-2;
         //display: inline;
         //float: right;
-        margin: 0;
+        margin: 0rem 3.5rem 0rem 3.5rem;
         padding: 0;
         max-width: 15rem;
     }
