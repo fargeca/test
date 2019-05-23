@@ -1,11 +1,5 @@
 .content {
-    //padding-top : header size (to show content)
-    //padding: $header-height+5rem 250px 0rem 250px;
-    //padding: $header-height+2rem 15rem 0rem 15rem;
-    // padding: $header-height+2rem 15% 0rem 15%
     padding-top: $header-height;
-    //padding-top: $header-height+5rem ;
-    //margin-left: $sidebar-width;
 }
 
 .main{
@@ -13,13 +7,7 @@
 }
 
 
-@include media-breakpoint-only(xs) {
-    .section__title-wrapper {
-        display: flex;
-        justify-content: center;
-    }
 
-}
 
 //article preview
 .article-preview {
@@ -112,7 +100,7 @@
 
 //popular-articles
 .popular-articles {
-    margin: 3rem 0rem 0rem 0rem;
+    // margin: 3rem 0rem 0rem 0rem;
     
     
 }
@@ -275,6 +263,17 @@
         margin-bottom: 2rem;
     }
 
+    @include media-breakpoint-down(md) {
+  .article__img {
+            margin: 3rem;
+        }
+    
+        .article__text {
+            margin: 3rem;
+        }
+    
+    }
+
 
 }
 
@@ -290,21 +289,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-.flex-medium-screen {
-    display: none;
-}
-
 .popular-articles{
     @include make-row();
 }
@@ -318,36 +302,12 @@
 
 
 @media screen and (max-width:1200px) {
-    body {
-       // background-color: salmon;
-    }
-
-    // .article-preview {
-    //     .article-preview__text-wrapper {
-    //        //order: 2;
-    //     }
-        
-    //     .article-preview__text {
-    //         //margin-bottom: 2rem;
-    //     }
-    //     .article-preview__img-wrapper {
-    //         //order: 1;
-    //     }
-
-    //     .article-preview__img {
-    //         //margin-bottom: 2rem;
-    //     }
-
-    // }
 
 
     .flex-medium-screen {
         display: flex;
     }
-    
-    .card {
 
-    }
   
     .popular-articles {
         margin-bottom: 0;
@@ -363,14 +323,29 @@
 }
 
 @media screen and (max-width:768px) {
-    .article-preview {
-        
-        .article-preview__text {
-            text-align: center;
-        }
+    
+}
+
+
+@include media-breakpoint-only(xs) {
+    .section__title-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    h3 {
+        text-align: center;
     }
 
-    h3 {
-        text-align: center !important;
+    .article__img {
+        margin: 3rem;
     }
+
+    .article__text {
+        margin: 3rem;
+    }
+
+    .article__header {
+        margin: 3rem;
+    }
+
 }

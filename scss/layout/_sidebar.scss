@@ -24,6 +24,7 @@
 
         .sidebar__img {
             display: flex;
+            min-height: $header-height;
             align-items: center;
             justify-content: center;
             height: $header-height;
