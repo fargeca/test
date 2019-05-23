@@ -41,18 +41,18 @@
 
 .card--horizontal{
     //@extend .card ;
-    // min-width: 100%;
     font-family: $font-primary;
-     margin-bottom: 2rem;
+    margin-bottom: 2rem;
     position: static !important;
-    
-    //padding: 1.3rem 1.5rem 1.3rem 1.5rem;
-    //padding: 2rem 3rem 2rem 3rem;
     max-width: 30rem;
     min-width: 23rem;
     text-align: center;
     background-color: white;
     box-shadow: 0 2px 20px 2px rgba(163,163,163,0.30);
+    
+    &:hover{
+        box-shadow: 0 2px 20px 2px rgba(58, 58, 58, 0.3);
+    }
     
     .card-body{
         display: flex !important;
@@ -121,7 +121,7 @@
 }
 
 .card--center {
-@include media-breakpoint-only(xs) {    
+@include media-breakpoint-down(md) {    
         position: static !important;
         display: flex;
         justify-content: space-around;
