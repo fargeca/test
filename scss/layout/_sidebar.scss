@@ -190,6 +190,7 @@
             text-align: center;
             padding-left: 0;
             padding-bottom: 40px;
+            font-size: 1rem;
             
             &::after{
                 transform: rotate(0deg);
@@ -203,6 +204,7 @@
         .sidebar__nav-sub-item {
             text-align: center;
             padding-left: 0 ;
+            font-size: 0.9rem;
         }
 
         .sidebar__item--selected {

@@ -15,11 +15,23 @@ h1 {
     text-align: center;
 }
 
+.section__title {
+    margin-bottom: 5rem;
+}
+
 h3 {
     font-family: $font-primary;
     color: rgb(53, 53, 53) ;
 }
 
-.section__title {
-    margin-bottom: 5rem;
+
+
+@include media-breakpoint-only(xs) {    
+    .section__title-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    h3 {
+        text-align: center;
+    }
 }

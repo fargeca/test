@@ -7,10 +7,11 @@
 
 @import 'base/custom.scss';
 
+@import "node_modules/bootstrap/scss/bootstrap";
+
 @import 'base/_base.scss';
 @import 'base/_typos.scss';
 
-@import "node_modules/bootstrap/scss/bootstrap";
 
 
 @import 'layout/_header.scss';

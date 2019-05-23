@@ -19,241 +19,227 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700,900&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700" rel="stylesheet">
- <title>Document</title>
+  <title>Document</title>
 </head>
 
 <body>
+  <div class="sidebar-wrapper">
+    <nav>
+      <ul class="sidebar">
+        <li class="sidebar__img ">
+          <a class=" navbar-brand  m-0  " href="index.html">
+            <img class="" src="img/kapt-white.png" alt="">
+          </a>
+        </li>
+
+        <li class="sidebar__item sidebar__item--selected">
+          <a class="sidebar__nav-item sidebar__nav-item--selected" href="#sectionsSubmenu" data-toggle="collapse"
+            aria-expanded="false">
+            Sections
+          </a>
+          <ul class="menu-content " id="sectionsSubmenu">
+            <li>
+              <a class="sidebar__nav-sub-item" href="#">Ajouter une section</a>
+            </li>
+            <li>
+              <a class="sidebar__nav-sub-item sidebar__nav-sub-item--selected" href="article.html">Ajouter un
+                article</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="sidebar__item">
+          <a class="sidebar__nav-item" href="#pagesSubmenu" data-toggle="collapse" aria-expanded="false">
+            Pages
+          </a>
+          <ul class="menu-content collapse" id="pagesSubmenu">
+            <li>
+              <a class="sidebar__nav-sub-item" href="#">Ajouter une page</a>
+            </li>
+            <li>
+              <a class="sidebar__nav-sub-item" href="#">Modifier une page</a>
+            </li>
+            <li>
+              <a class="sidebar__nav-sub-item" href="#">Définir l'ordre des pages</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="sidebar__item">
+          <a class="sidebar__nav-item" href="#plugginsSubmenu" data-toggle="collapse" aria-expanded="false">
+            Pluggins
+          </a>
+          <ul class="menu-content collapse" id="plugginsSubmenu">
+            <li>
+              <a class="sidebar__nav-sub-item" href="#">Slider </a>
+            </li>
+            <li>
+              <a class="sidebar__nav-sub-item" href="#">Dossier</a>
+            </li>
+            <li>
+              <a class="sidebar__nav-sub-item" href="#">Changer de pluggin</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="sidebar__item">
+          <a class="sidebar__nav-item" href="#blogSubmenu" data-toggle="collapse" aria-expanded="false">
+            Blog
+          </a>
+          <ul class="menu-content collapse" id="blogSubmenu">
+            <li>
+              <a class="sidebar__nav-sub-item" href="#">Ajouter un article au blog</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="sidebar__item">
+          <a class="sidebar__nav-item" href="#imagesSubmenu" data-toggle="collapse" aria-expanded="false">
+            Images
+          </a>
+          <ul class="menu-content collapse" id="imagesSubmenu">
+            <li>
+              <a class="sidebar__nav-sub-item" href="#">Rogner une image</a>
+            </li>
+            <li>
+              <a class="sidebar__nav-sub-item" href="#">Dossier d'images</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
 
 
+  <div class="header">
+    <nav class="navbar   bg-white flex-md-nowrap p-0 ">
+      <input class="form-control " type="search" placeholder="Rechercher" aria-label="Search">
+    </nav>
+  </div>
 
-  
-        <div class="sidebar-wrapper">
-            <nav>
-              <ul class="sidebar">
-    
-                <li class="sidebar__img ">
-                  <a class=" navbar-brand  m-0  " href="index.html">
-                    <img class="" src="img/kapt-white.png" alt="">
-                  </a>
-                </li>
-    
-                <li class="sidebar__item sidebar__item--selected">
-                    <a class="sidebar__nav-item sidebar__nav-item--selected" href="#sectionsSubmenu" data-toggle="collapse" aria-expanded="false">
-                      Sections
-                    </a>
-                    <ul class="menu-content " id="sectionsSubmenu">
-                      <li>
-                        <a class="sidebar__nav-sub-item" href="#">Ajouter une section</a>
-                      </li>
-                      <li>
-                        <a class="sidebar__nav-sub-item sidebar__nav-sub-item--selected" href="article.html">Ajouter un article</a>
-                      </li>
-                    </ul>
-                  </li>
-    
-    
-                <li class="sidebar__item">
-                  <a class="sidebar__nav-item" href="#pagesSubmenu" data-toggle="collapse" aria-expanded="false">
-                    Pages
-                  </a>
-                  <ul class="menu-content collapse" id="pagesSubmenu">
-                    <li>
-                      <a class="sidebar__nav-sub-item" href="#">Ajouter une page</a>
-                    </li>
-                    <li>
-                      <a class="sidebar__nav-sub-item" href="#">Modifier une page</a>
-                    </li>
-                    <li>
-                      <a class="sidebar__nav-sub-item" href="#">Définir l'ordre des pages</a>
-                    </li>
-                  </ul>
-                </li>
-    
-                <li class="sidebar__item">
-                  <a class="sidebar__nav-item" href="#plugginsSubmenu" data-toggle="collapse" aria-expanded="false">
-                    Pluggins
-                  </a>
-                  <ul class="menu-content collapse" id="plugginsSubmenu">
-                    <li>
-                      <a class="sidebar__nav-sub-item" href="#">Slider </a>
-                    </li>
-                    <li>
-                      <a class="sidebar__nav-sub-item" href="#">Dossier</a>
-                    </li>
-                    <li>
-                      <a class="sidebar__nav-sub-item" href="#">Changer de pluggin</a>
-                    </li>
-                  </ul>
-                </li>
-    
-                <li class="sidebar__item">
-                  <a class="sidebar__nav-item" href="#blogSubmenu" data-toggle="collapse" aria-expanded="false">
-                    Blog
-                  </a>
-                  <ul class="menu-content collapse" id="blogSubmenu">
-                    <li>
-                      <a class="sidebar__nav-sub-item" href="#">Ajouter un article au blog</a>
-                    </li>
-                  </ul>
-                </li>
-    
-                <li class="sidebar__item">
-                  <a class="sidebar__nav-item" href="#imagesSubmenu" data-toggle="collapse" aria-expanded="false">
-                    Images
-                  </a>
-                  <ul class="menu-content collapse" id="imagesSubmenu">
-                    <li>
-                      <a class="sidebar__nav-sub-item" href="#">Rogner une image</a>
-                    </li>
-                    <li>
-                      <a class="sidebar__nav-sub-item" href="#">Dossier d'images</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </nav>
-          </div>
 
-      
-          <div class="header">
-              <nav class="navbar   bg-white flex-md-nowrap p-0 ">
-                <input class="form-control " type="search" placeholder="Rechercher" aria-label="Search">
-              </nav>
-            </div>
+  <div class="main ">
+    <div class="container">
+      <div class="row">
 
-            <div class="main ">
-                <div class="container">
-                    <div class="row">
-       
-                <div class="content  ">
-            <div class="article">
-              <h1 class="article__title">Ajouter un article</h1>
+        <div class="content  ">
+          <div class="article">
 
-              <p class="article__header">
+            <h1 class="article__title">Ajouter un article</h1>
 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi impedit consequuntur modi eius
-                deserunt
+            <p class="article__header">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi impedit consequuntur modi eius
+              deserunt
+              veritatis commodi et vitae consectetur adipisci, labore praesentium cumque? Odit, ratione consequatur.
+              Eum
+              ex ea minus?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi impedit consequuntur modi eius
+              deserunt
+              veritatis commodi et vitae consectetur adipisci, labore praesentium cumque? Odit, ratione consequatur.
+              Eum
+              ex ea minus?
+            </p>
+
+            <div class="article__body">
+              <h3 class="article__subtitle">1. Créer une instance</h3>
+              <div class="article__img ">
+                <img class="img-fluid" src="img/computer.jpeg" alt="">
+              </div>
+              <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi impedit
+                consequuntur modi eius deserunt
                 veritatis commodi et vitae consectetur adipisci, labore praesentium cumque? Odit, ratione consequatur.
                 Eum
                 ex ea minus?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi impedit consequuntur modi eius
-                deserunt
-                veritatis commodi et vitae consectetur adipisci, labore praesentium cumque? Odit, ratione consequatur.
-                Eum
-                ex ea minus?
-
               </p>
 
-
-
-              <div class="article__body">
-
-                <h3 class="article__subtitle">1. Créer une instance</h3>
-                <div class="article__img ">
-                  <img class="img-fluid" src="img/computer.jpeg" alt="">
-                </div>
-                <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi impedit
-                  consequuntur modi eius deserunt
-                  veritatis commodi et vitae consectetur adipisci, labore praesentium cumque? Odit, ratione consequatur.
-                  Eum
-                  ex ea minus?
-                </p>
-
-                <h3 class="article__subtitle">2. Duppliquer les valeurs</h3>
-                <div class="article__img ">
-                    <img class="img-fluid" src="img/computer.jpeg" alt="">
-                </div>
-                <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi impedit
-                  consequuntur modi eius deserunt
-                  veritatis commodi et vitae consectetur adipisci, labore praesentium cumque? Odit, ratione consequatur.
-                  Eum
-                  ex ea minus?
-                </p>
+              <h3 class="article__subtitle">2. Duppliquer les valeurs</h3>
+              <div class="article__img ">
+                <img class="img-fluid" src="img/computer.jpeg" alt="">
               </div>
+              <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi impedit
+                consequuntur modi eius deserunt
+                veritatis commodi et vitae consectetur adipisci, labore praesentium cumque? Odit, ratione consequatur.
+                Eum
+                ex ea minus?
+              </p>
+            </div>
+          </div>
 
+
+
+
+          <div class="row article-footer ">
+            <div class="col-12">
+              <h3 class="article-footer__title">Articles similaires</h3>
             </div>
 
-
-           
-  
-                <div class="row article-footer ">
-                  <div class="col-12">
-                    <h3 class="article-footer__title">Articles similaires</h3>
-                  </div>
-                  <div class="popular-articles flex-big-screen">
-                    <div class=" popular-articles--center">
-                      <div class="card popular-articles__card">
-                        <div class="card-body">
-                          <div class="img__wrapper">
-                            <img class="card-image" src="img/icon-grid.png" alt="">
-                            <h5 class="card-title">Structurer vos pages</h5>
-                          </div>
-                          <div class="text__wrapper">
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            <hr>
-                            <div class="card-link">
-                              <a class="link-secondary" href="#">Voir l'article</a>
-                            </div>
-                          </div>
-      
-                        </div>
-                      </div>
+            <div class="popular-articles flex-big-screen">
+              <div class=" card--center card-wrapper">
+                <div class="card popular-articles__card">
+                  <div class="card-body">
+                    <div class="img__wrapper">
+                      <img class="card-image" src="img/icon-grid.png" alt="">
+                      <h5 class="card-title">Structurer vos pages</h5>
                     </div>
-                    <div class=" popular-articles--center">
-                      <div class="card popular-articles__card">
-                        <div class="card-body">
-                          <div class="img__wrapper">
-                            <img class="card-image" src="img/icon-pen.png" alt="">
-                            <h5 class="card-title">Structurer vos pages</h5>
-                          </div>
-                          <div class="text__wrapper">
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            <hr>
-                            <div class="card-link">
-                              <a class="link-secondary" href="#">Voir l'article</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="popular-articles--center">
-                      <div class="card popular-articles__card">
-                        <div class="card-body">
-                            <div class="img__wrapper">
-                          <img class="card-image" src="img/icon-paint.png" alt="">
-                          <h5 class="card-title">Modifier une page</h5>
-                            </div>
-                            <div class="text__wrapper">
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                          <hr>
-                          <div class="card-link">
-                            <a class="link-secondary" href="#">Voir l'article</a>
-                          </div>
-                        </div>
-                        </div>
+                    <div class="text__wrapper">
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                      <hr>
+                      <div class="card-link">
+                        <a class="link-secondary" href="#">Voir l'article</a>
                       </div>
                     </div>
                   </div>
-
-          
-
                 </div>
               </div>
-            
+
+              <div class=" card--center card-wrapper">
+                <div class="card popular-articles__card">
+                  <div class="card-body">
+                    <div class="img__wrapper">
+                      <img class="card-image" src="img/icon-pen.png" alt="">
+                      <h5 class="card-title">Structurer vos pages</h5>
+                    </div>
+                    <div class="text__wrapper">
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                      <hr>
+                      <div class="card-link">
+                        <a class="link-secondary" href="#">Voir l'article</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card--center card-wrapper">
+                <div class="card popular-articles__card">
+                  <div class="card-body">
+                    <div class="img__wrapper">
+                      <img class="card-image" src="img/icon-paint.png" alt="">
+                      <h5 class="card-title">Modifier une page</h5>
+                    </div>
+                    <div class="text__wrapper">
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                      <hr>
+                      <div class="card-link">
+                        <a class="link-secondary" href="#">Voir l'article</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
   </div>
   </div>
-
-
-
+  </div>
+  </div>
 </body>
-
 </html>
