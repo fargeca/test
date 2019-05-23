@@ -67,45 +67,14 @@
                 @include make-col(6);
             }
         }
-
-    // .article-preview__text-wrapper {
-    //     @include make-col-ready();
-    //     @include media-breakpoint-down(md) {
-    //     @include make-col(12);
-    //     order: 2;
-
-    //     @include media-breakpoint-up(lg) {
-    //         @include make-col(6);
-    //     }
-    // }
-
-    // .article-preview__img-wrapper {
-    //     @include make-col-ready();
-    //     @include media-breakpoint-down(md) {
-    //     @include make-col(12);
-    //     order: 1;
-    //     margin-bottom: 2rem;
-
-    //     @include media-breakpoint-up(lg) {
-    //         @include make-col(6);
-    //     }
-    // }
-    // }
-    // }
-
 }
 
 
 
 
 //popular-articles
-.popular-articles {
-    // margin: 3rem 0rem 0rem 0rem;
-    
-    
-}
 
-.popular-articles--center{
+.popular-articles--center {
     position: static !important;
     display: flex;
     justify-content: space-around;
@@ -122,11 +91,15 @@
     margin: 5rem 0rem 8rem 0;
 }
 
-.popular-articles--center{
+
+.popular-articles--center {
     @include make-col-ready();
 
     @include media-breakpoint-only(xs) {
         @include make-col(12);
+        display: flex;
+        justify-content: space-around;
+
         //vertical
         .card {
             min-width: 15rem !important;
@@ -152,12 +125,15 @@
     @include media-breakpoint-down(md) {
         @include make-col(12);
 
+        //delete center
+        //display: block;
+
         //horizontal
         .card{
             // min-width: 100%;
              margin-bottom: 2rem;
-            position: static !important;
-            padding: 1.3rem 1.5rem 1.3rem 1.5rem;
+            position: static ;
+            padding: 1.3rem 1.5rem 1.3rem 1.5rem ;
             max-width: 30rem;
             min-width: 23rem;
             text-align: center;
@@ -232,7 +208,16 @@
 //PAGE ALL ARTICLES
 
 .all-articles {
-    margin: 4rem 0 8rem 0
+    margin: 4rem 0 8rem 0;
+
+    @include media-breakpoint-only(md) {
+        .popular-articles--center {
+        //delete center
+        display: block;
+        }
+
+    }    
+    
 }
 
 

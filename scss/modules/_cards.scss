@@ -27,9 +27,6 @@
     .card-text {
         font-size: 0.9rem;
         margin: 2rem 0rem 2rem 0rem;
-
-        //font-family: Helvetica;
-        color: #838383;
     }
 
     hr {
@@ -45,9 +42,11 @@
 .card--horizontal{
     //@extend .card ;
     // min-width: 100%;
+    font-family: $font-primary;
      margin-bottom: 2rem;
     position: static !important;
-    padding: 1.3rem 1.5rem 1.3rem 1.5rem;
+    
+    //padding: 1.3rem 1.5rem 1.3rem 1.5rem;
     //padding: 2rem 3rem 2rem 3rem;
     max-width: 30rem;
     min-width: 23rem;
@@ -76,7 +75,6 @@
     
         .card-image {
             margin: 1rem 0rem 1rem 0rem;
-    
         }
     
         .card-title {
@@ -85,32 +83,59 @@
     
         .card-text {
             margin: 1rem 0rem 2rem 0rem;
+            font-size: 0.9rem;
         }
     }
 
-}
-
-@media screen and (max-width:768px) {
-    .card--horizontal {
+    @include make-col-ready();
+    @include media-breakpoint-only(xs) {
+        @include make-col(12);
+        //vertical
         min-width: 15rem !important;
         max-width: 17rem !important;
-        padding: 2rem 3rem 2rem 3rem !important;
+        padding: 2rem 3rem 2rem 3rem;
 
-        .cardy-body{
-            display: block !important;
+        .card-body {
+            display: block !important ;
+            padding: 0;
 
-            .img__wrapper{
-                margin: 0 !important;
+            .img__wrapper {
+                margin: 0;
             }
-
             .text__wrapper {
-                margin: 0 !important;
+                margin: 0 ;
             }
-            
+
+            .card-text {
+                margin: 2rem 0rem 2rem 0rem !important;
+            }
         }
-    
-    }
+
+        .popular-articles--center{
+            position: static !important;
+            display: flex;
+            justify-content: space-around;
+        }
+      
+    } 
 }
+
+.card--center {
+@include media-breakpoint-only(xs) {    
+        position: static !important;
+        display: flex;
+        justify-content: space-around;
+    }
+  
+} 
+
+// @media screen and (max-width:768px) {
+//     .card--horizontal {
+//         min-width: 15rem;
+//         max-width: 17rem ;
+//         padding: 2rem 3rem 2rem 3rem;
+//     }
+// }
 
 
 
