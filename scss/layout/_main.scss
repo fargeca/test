@@ -81,6 +81,9 @@
 
 .popular-articles{
     @include make-row();
+    @include media-breakpoint-up(lg) {
+    margin-left: 2rem;
+    }
 }
 
 .popular-articles__title {
@@ -161,15 +164,15 @@
     //margin on small devices
     @include media-breakpoint-down(md) {
         .article__header {
-            margin: 3rem;
+            margin: 0 4rem 0 4rem;
         }
 
         .article__img {
-            margin: 3rem;
+            margin: 0 4rem 2rem 4rem;
         }
     
         .article__text {
-            margin: 3rem;
+            margin: 0 4rem 0 4rem;
         }
     
     }
@@ -222,6 +225,13 @@
 // @media screen and (max-width:768px) {
     
 // }
+
+
+@media screen and (max-width:576px) {
+    .main{
+        margin-left: 0 !important;
+    }
+}
 
 
 
