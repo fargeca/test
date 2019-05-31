@@ -100,7 +100,9 @@
             @extend .nav-link;
 
             &:hover {
-                @extend .sidebar__nav-sub-item--selected
+                // @extend .sidebar__nav-sub-item--selected
+                @extend .text-secondary ;
+
             }
         }
 
@@ -123,6 +125,7 @@
             @extend .text-secondary ;
             //border-left: 6px solid $color-secondary;
             //padding-left: 4.5rem;
+            // text-decoration: underline;
     }
 }
 
