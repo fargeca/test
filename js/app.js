@@ -15,9 +15,10 @@ $('.searchbarCollapse').on('click', function () {
     $('.searchbar').toggleClass('searchbar--active');
 });
 
-// $('.search-icon').on('click', function () {
-//     $('.navbar-xs__input').toggleClass('navbar-xs__input--active');
-// });
+ $('.navbar-xs__search').on('click', function () {
+     $(this).toggleClass('navbar-xs__search--active');
+     $('.navbar-xs__input').toggleClass('navbar-xs__input--active');
+ });
 
 
 
