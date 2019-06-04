@@ -15,6 +15,11 @@ $('.searchbarCollapse').on('click', function () {
     $('.searchbar').toggleClass('searchbar--active');
 });
 
+// $('.search-icon').on('click', function () {
+//     $('.navbar-xs__input').toggleClass('navbar-xs__input--active');
+// });
+
+
 
 });
 

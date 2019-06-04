@@ -58,7 +58,87 @@
     .navbar-xs {
         display: block !important;
         background-color: $color-primary;
-        // height: 3rem;
+        // background-color: rgb(51, 56, 107);
+
+         height: 2.5rem;
+    }
+
+    .burger-icon {
+        color:rgb(117, 123, 179);
+        &:hover {
+            color:rgb(117, 123, 179);
+        }
+    }
+
+
+    .navbar-xs__wrapper {
+
+    }
+    .navbar-xs__search {
+        position: absolute;
+        right: 0.5rem;
+        top: 0.2rem;
+        color: rgb(117, 123, 179);
+        background-color: $color-primary;
+        // border:  1.5px solid rgb(69, 75, 133) ;
+        border:  1.5px solid rgb(117, 123, 179) ;
+
+        border-radius:3rem;
+        // background-color:rgb(69, 75, 133) ;
+        width: 12rem;
+        height: 2rem;
+
+        
+
+        &:hover {
+            color:rgb(117, 123, 179);
+        }
+    }
+
+    .search-icon {
+        position: absolute;
+        left: 1rem;
+        top:0.45rem;
+        
+    }
+
+    .navbar-xs__input {
+        // visibility: hidden;
+        // border-radius: 2rem;
+        // border:  2px solid white;
+        background-color: $color-primary;
+        // background-color: rgb(69, 75, 133);
+        font-size: 1rem;
+        height: 1rem;
+        margin-left: 1.8rem;
+        color: rgb(117, 123, 179);
+        width: 8.8rem;
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+
+
+            &:hover {
+                // background-color: rgb(69, 75, 133) !important;
+                background-color: $color-primary;
+            }
+            &::placeholder {
+                color: rgb(117, 123, 179);
+                font-size: 0.9rem;
+            }
+
+            &:focus {
+                color: rgb(117, 123, 179);
+                font-size: 1rem;
+            }
+    }
+
+
+
+
+    
+    .navbar-xs__input--active {
+        visibility: visible;
     }
     
 }

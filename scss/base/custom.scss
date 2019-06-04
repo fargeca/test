@@ -82,6 +82,18 @@ $grid-breakpoints: (
   box-shadow: 0 0 0 0 !important;
 }
 
+.btn-primary:hover {
+  background-color: $color-primary !important;
+  border: 0;
+}
+
+.btn-primary {
+  &:hover {
+    background: lighten($color-primary, 0%) !important;
+  }
+}
+
+
 
 input {
   border: 0;

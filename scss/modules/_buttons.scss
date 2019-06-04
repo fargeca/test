@@ -7,17 +7,17 @@
     margin: 20px;
     height: 50px;
     line-height: 33px;
-   // transition: all 0.3s linear;
+   transition: all 0.4s linear;
     font-family: 'Lato';
     font-size: 1.3rem;
     border: 0;
 
     &:hover {
-        // background-color: $color-success;
-        color: $color-secondary;
-        background-color: white;
-        border: 0.2rem solid $color-secondary;
-        //transition: all 0.3s linear;
+        background-color: $color-success;
+        // color: $color-secondary;
+        // background-color: white;
+        // border: 0.2rem solid $color-secondary;
+        transition: all 0.4s linear;
     }
 }
 

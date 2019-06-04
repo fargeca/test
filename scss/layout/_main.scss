@@ -13,7 +13,7 @@
 
 //article preview
 .article-preview {
-    padding:  $row-spacing 0 $row-spacing 0;
+    padding:  $row-spacing 0 $row-spacing+2rem 0;
     position: static !important;
 
     .article-preview__title {
