@@ -23,6 +23,7 @@
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
 
   <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900&display=swap" rel="stylesheet">
@@ -38,27 +39,16 @@
 
       <ul class="sidebar ">
 
-        <!-- <div class="sidebar__close ">
-                <i class="sidebarCollapse fas fa-times fa-lg"></i>
-        </div> -->
+
 
         <li class="sidebar__img ">
-          <div class="sidebar__close">
-            <!-- <button type="button" class="btn btn-secondary sidebarCollapse">
-                    <i class="fas fa-bars"></i>
-                  </button> -->
-          </div>
+
 
           <a class=" navbar-brand  m-0  " href="index.html">
             <img class="" src="img/kapt-white.png" alt="">
           </a>
         </li>
 
-        <li class="text-center">
-          <!-- <button type="button" class="btn btn-secondary sidebarCollapse">
-            <i class="fas fa-bars"></i>
-          </button> -->
-        </li>
         <li class="sidebar__item">
           <a class="sidebar__nav-item" href="#sectionsSubmenu" data-toggle="collapse" aria-expanded="false">
             Sections
@@ -140,36 +130,32 @@
   </div>
 
 
-  <div class="header">
-    <nav class="searchbar navbar bg-white flex-md-nowrap p-0 ">
-      <input class="form-control " type="search" placeholder="Rechercher" aria-label="Search">
+  <div class="header ">
+    <nav class="searchbar navbar navbar-xs bg-white flex-md-nowrap p-0 ">
+          <button type="button" class="  btn  sidebarCollapse burger-icon">
+              <i class="fas fa-bars fa-lg"></i>
+            </button>
+        
+          <div class="navbar-xs__search">
+      <input class="navbar-xs__input form-control " type="search" placeholder="Rechercher" aria-label="Search">
+      <div class="search-icon">
+        <i class="fas fa-search fa-sm"></i>      
+
+      </div>
+    </div>
     </nav>
-    <!-- <button type="button" class="btn btn-secondary searchbarCollapse">
-      <i class="fas fa-bars"></i>
-    </button> -->
 
-    <!-- <div class="d-flex justify-content-center"> -->
-    <!-- <div class="navbar-xs__wrapper"> -->
-      <div class="navbar-xs">
-        <button type="button" class=" btn  sidebarCollapse burger-icon">
+      <!-- <div class="navbar-xs"> -->
+        <!-- <button type="button" class=" btn  sidebarCollapse burger-icon">
           <i class="fas fa-bars"></i>
-        </button>
-      <!-- </div> -->
+        </button> -->
 
-      <!-- <button type="button navbar-xs__search" class="search-icon btn btn-primary"> -->
-      <div class="navbar-xs__search btn ">
+      <!-- <div class="navbar-xs__search btn ">
         <input class="navbar-xs__input" type="text" placeholder="Rechercher">
         <i class="search-icon  fas fa-search"></i>
-      </div>
-
-
-
-      <!-- </button> -->
+      </div> -->
 
     </div>
-    <!-- </div> -->
-
-  </div>
 
 
 
@@ -205,10 +191,8 @@
               </div>
             </div>
           </div>
-          <div class="clear"></div>
 
 
-          <div class=" ">
             <div class="row section__title-wrapper">
               <h3 class="section__title ">Articles populaires</h3>
             </div>
@@ -267,7 +251,6 @@
                 </div>
               </div>
             </div>
-          </div>
 
           <div class="col-12 popular-articles__link">
             <h4 class=""> <a class="link-primary" href="articles.html">Voir plus d'articles</a> </h4>

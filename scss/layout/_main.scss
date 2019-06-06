@@ -129,7 +129,10 @@
     //     display: block;
     //     }
     // }    
-    
+        
+    .all-articles__title {
+        margin-left: 10%;
+    }
 }
 
 
@@ -174,6 +177,8 @@
         .article__text {
             margin: 0 4rem 0 4rem;
         }
+
+        
     
     }
 
@@ -231,7 +236,9 @@
     .main{
         margin-left: 0 !important;
     }
-
+    .article-preview {
+        // padding: 4rem 0 12rem 0;
+    }
 }
 
 
